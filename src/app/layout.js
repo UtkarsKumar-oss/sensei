@@ -12,11 +12,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="w-full bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors">
-        <Providers>{children}</Providers>
-        <Toaster />
-        <main className="">
-          {children}
-        </main>
+        <Providers>
+          <Toaster />
+          <main className="">
+            {children}
+          </main>
+        </Providers>
 
       </body>
     </html>
